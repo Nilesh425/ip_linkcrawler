@@ -1,0 +1,67 @@
+23-01-2011  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+added: threading
+added: MAX_THREADS
+added: sitename-sample config
+
+10-05-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+changed: completeRelativePath method now extracts the parent path
+
+07-05-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+changed: Unittest method "test_path_regex" to "test_completeRelativePath"
+Improved: new method completeRelativePath to make a server absolute path within the parent and the actual path
+
+06-05-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Added Unittest method "test_extractLinks"
+* Added Unittest method "test_path_regex"
+* Improved ignoreLink method
+* Improved extractLinks method to find relative links too
+* Improved readDataRecursivly method to add the former path if the link is relative
+* Improved loadConfigurationSite load INCLUDE_PATTERN / EXCLUDE_PATTERN checks now for empty string
+
+25-03-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Added destructor
+* Improved info and debug messages
+* Added LINK_DEPTH option to loadConfiguration method
+
+24-03-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Improved "smtpsend" to send mails without authentification
+* Added Unittest method "test_write2file"
+* Improved "ignoreLink" method and debug message
+* Renamed option EXCLUDE_TYPES to EXCLUDE_PATTERN
+* Renamed option INCLUDE_TYPES to INCLUDE_FILETYPES
+* Renamed "checkLink" method to "ignoreLink"
+* Renamed all config options
+* Refactored "loadConfiguration" and splitted to "loadConfiguration" and "loadConfigurationSite"
+* Added single config file for specific site
+* Restructured the project file system
+
+23-03-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Added close and connect httpconnection method to "start"
+* Removed close and connect httpconnection from getResponse
+* Added configuration option: useragent
+* Added cookie to getResponse httpconnection
+* Improved getResponse connection is now keep-alive
+* Added configuration option: SMTP_TTLS
+* Added smtpsend method
+* Removed mailHelper class
+* Added unittests
+* Added configuration option: mail server settings
+* Improved debug, exception and error messages
+
+22-03-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Added configuration option: reportlevel
+* Added showStatusCode
+* Improvement: generateReport compares now the statuscode with the reportlevel setting
+
+25-01-2010  Clemens Tietze  <clemens.tietze@iltisworld.de>
+---
+* Added sections to config file
+* Added config file
