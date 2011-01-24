@@ -30,13 +30,13 @@ them for your needs
 
 * check the default settings in the config file
 
-* Execute test_WebReportApp.py to run a unittest
+* Execute test_linkcrawler.py to run a unittest
 
 
 Execute App
 ***********
 * by shell
-$ python webReportApp.py [SITENAME]
+$ python linkcrawler.py [SITENAME]
 
 * by crontab
 $ crontab -e // edit crontab
